@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <!--navigation-->
+        <div class="container m-3 style="width: 100%;"" id="#navigation">
+            <div class="row align-items-center" >
+                <div class="col">
+                    <button class="btn btn-dark position-fixed" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <i class="bi bi-list" style="font-size: 25px"></i>                    
+                    </button>
+            
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">More...</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, quod! Architecto, exercitationem dolor vero a minus odio reprehenderit ea excepturi.</p>
+                        <div class="btn btn-dark">Adipisci!</div>
+                      </div>
+                    </div>
+                </div>
+                <!--end-->
+                <div class="col display-6">
+                    <a href="#navigation" class="link-underline link-underline-opacity-0 link-dark">
+                        <img src="favicon.png" height="35px">
+                        Hat Store
+                    </a>
+                </div>
+                <!--end-->
+            </div>
+        </div>
+    <!--scrollspy-->
+    <div class="container d-flex justify-content-end position-fixed" style="max-width: 100%; z-index: 9999;" id="main-navigation" tabindex="1">
+        <div class="navbar navbar-expand navbar-dark">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link  home" href="#maincontent">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collections" href="#card">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link about-us" href="#additionalcontent">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#main-navigation" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-0 rounded-2" tabindex="0">
+    <section id="maincontent">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col text-center mt-5">
+                    <img src="chapeu.png" alt="chapeu" height="250px">
+                </div>
+                <div class="col mt-4">
+                    <div class="display-2">The Best Hats</div>
+                    <div class="display-6 text-muted">
+                    Shop the best hats available now on our online store
+                    </div>
+                    <a href="#card">
+                        <button class="btn btn-dark mt-5 mb-5 p-3 ">
+                            <div class="arrow-1"></div>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--card-->
+    <section id="card">
+        <div class="container mt-5 align-items-center justify-content-center">
+            <div class="display-4 text-center">New Collection</div>
+            <div class="lead text-muted text-center">Choose a hat that suits you</div>
+            <div class="row m-5">
+                <div class="col">
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <img src="hat1.jpg" class="card-img-top p-3" alt="product 1">
+                        <div class="card-body text-light">
+                            <h5 class="card-title">Brown Hat</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, obcaecati.</p>
+                            <p class="card-text display-6">34.99</p>
+                            <a href="#" class="btn btn-light fw-bold">Details</a>
+                        </div>
+                    </div>
+                </div>
+        <!--end-->
+                <div class="col">
+                    <div class="card bg-dark pb-4" style="width: 18rem;">
+                        <img src="hat2.jpg" class="card-img-top p-3" alt="product 1">
+                        <div class="card-body text-light">
+                            <h5 class="card-title">Fedora<span class="badge bg-danger px-3 ms-2">Sale</span></h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, obcaecati.</p>
+                            <p class="card-text display-5 text-danger">19.99$</p>
+                            <a href="#" class="btn btn-light fw-bold">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">        
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <img src="hat3.jpg" class="card-img-top p-3" alt="product 1">
+                        <div class="card-body text-light">
+                            <h5 class="card-title">White Hat</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, obcaecati.</p>
+                            <p class="card-text display-5">29.99$</p>
+                            <a href="#" class="btn btn-light fw-bold">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    <!--additional content-->
+    <section id="additionalcontent">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="container mt-5" style="width: 700px;">
+                    <p class="display-4 my-5">Our Priorities</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            1. Quality
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis sit est, ullam odit fugiat maxime eos quae cumque eaque. Provident nemo itaque sit libero facilis rem error nesciunt dolores exercitationem ipsam ullam ratione dolorum, sed quasi unde inventore molestias, porro eius repudiandae dolorem accusantium, hic praesentium assumenda? Quisquam, modi corporis.                    </div>
+                        </div>
+                      </div>
+    
+                    <!--end-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          2. Price
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quibusdam ut voluptatem pariatur rem ex, facere, delectus perspiciatis, ipsa tempora sequi quas nesciunt sed vero ullam ad odio cumque alias repellat. Doloremque commodi odio voluptatem nulla debitis iste ducimus dolores numquam sed magni accusantium dolore quaerat corrupti, nam distinctio dolorum.                    </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          3. Experience
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui reiciendis numquam iusto fugit cum saepe neque quaerat excepturi, in adipisci aperiam delectus sed aliquid natus aliquam inventore consequuntur ad quasi, ea voluptate voluptates! Doloribus corporis quae reiciendis est, in odio vitae iure modi sunt provident soluta ea accusantium fugiat molestiae?
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="mulhercom_chapeu.png" alt="women-hidding-behind-hat">
+            </div>
+        </div>
+    </section>
+</div>
+    <!--end-->
+    <div class="footer bg-dark">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col border-end">
+                    <p class="text-light"><b>Sofia Isabel</b></p>
+                    <p class="text-light">2024</p>
+                </div>
+                <div class="col">
+                    <p class="text-light text-end">Excercise Website</p>
+                    <p class="text-light text-end">Bootstrap Study</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
